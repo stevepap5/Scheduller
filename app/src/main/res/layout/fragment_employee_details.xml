@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ParticularEmployeeActivity.EmployeeDetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/employeeNameTextInputLayoutXml"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="4sp"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/employeeNameMaterialTextViewXml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/employeeSurnameMaterialTextInputLayoutXml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/employeeNameTextInputLayoutXml"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="4sp"
+            >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/employeeSurnameMaterialTextViewXml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/employeeHiringDateTextInputLayoutXml"
+            app:layout_constraintTop_toBottomOf="@id/employeeSurnameMaterialTextInputLayoutXml"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="4sp"
+            >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/employeeHiringDateMaterialTextViewXml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/updateEmployeeDetailsEmployeeButtonXml"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4sp"
+            android:layout_marginBottom="112dp"
+            android:text="@string/update"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="4dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

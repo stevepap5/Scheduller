@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SkillsActivity.SkillsActivity">
+
+    <include
+        android:id="@+id/skillToolbarXml"
+        layout="@layout/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/skillRecyclerviewXml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skillToolbarXml"
+       />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        style="@style/Widget.Design.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createNewSkillFloatingButtonXml"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:tint="@color/primaryWhite"
+        app:srcCompat="@drawable/ic_add"
+        app:backgroundTint="@color/colorAccent"
+        android:layout_margin="8sp"
+        android:contentDescription="@string/todo" />
+</RelativeLayout>

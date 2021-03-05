@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/updateEmployeeNameTextInputLayoutXml"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4sp"
+        android:hint="@string/update_employee_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/updateEmployeeNameEditTextXml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/updateEmployeeSurNameTextInputLayoutXml"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateEmployeeNameTextInputLayoutXml"
+        android:layout_margin="4sp"
+        android:hint="@string/employee_surname">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/updateEmployeeSurNameEditTextXml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveUpdatedEmployeeDetailsXml"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateEmployeeSurNameTextInputLayoutXml"
+        android:layout_margin="4sp"
+        android:text="@string/save" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancelUpdateEmployeeButtonXml"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saveUpdatedEmployeeDetailsXml"
+        android:layout_margin="4sp"
+        android:text="@string/cancel" />
+
+</RelativeLayout>

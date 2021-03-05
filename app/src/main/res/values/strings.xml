@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Scheduller</string>
+    <string name="employees_string">Employees</string>
+    <string name="skills_string">Skills</string>
+    <string name="scheduller">Scheduller</string>
+    <string name="delete">DELETE</string>
+    <string name="update">UPDATE</string>
+    <string name="skills_name">Skills Name</string>
+    <string name="skills_description">Skills Description</string>
+    <string name="skills_date_of_creation">Skills Date of Creation</string>
+    <string name="update_skill_description">Update skill description</string>
+    <string name="save">SAVE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="todo">TODO</string>
+    <string name="create_new_skill_name">create new skill name</string>
+    <string name="create_new_skill_description">create new skill description</string>
+    <string name="employee_name">Employee name</string>
+    <string name="employee_surname">Employee surname</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update_employee_name">Update employee name</string>
+</resources>
